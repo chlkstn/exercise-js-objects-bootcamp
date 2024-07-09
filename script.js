@@ -85,7 +85,10 @@ function changeMail(u) {
 
     newname = newname.replace(",", ".");
 
-    newname = newname + "@example.com";
+    nationality = element.nat;
+    nationality = nationality.toLowerCase();
+
+    newname = newname + "@evilcorp." + nationality;
 
     Object.defineProperty(element, "email", { value: newname });
 
